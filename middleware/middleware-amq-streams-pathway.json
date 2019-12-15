@@ -1,0 +1,12 @@
+{
+  "title": "AMQ Streams Scenarios",
+  "description": "",
+  "paid": "false",
+  "courses": [
+    {
+      "course_id": "getting-started-with-amq-streams",
+      "title": "Getting Started With AMQ Streams",
+      "description": "Get Started Directly With AMQ Streams"
+    }
+  ]
+}

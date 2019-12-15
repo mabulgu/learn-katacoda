@@ -1,0 +1,48 @@
+{
+  "title": "Getting Started With AMQ Streams",
+  "description": "Get Started Directly With AMQ Streams",
+  "difficulty": "medium",
+  "time": "10 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Installing the Cluster Operator",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh",
+      "courseData": "run-init.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/root/strimzi-0.12.0/",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Console",
+        "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "openshift-4-2",
+    "port": 8443
+  }
+}
