@@ -4,6 +4,13 @@
   "courses": [
     {
       "action": "Start Course",
+      "count": 1,
+      "external_link": "https://learn.openshift.com/middleware/courses/middleware-amq-streams/",
+      "course_id": "middleware-amq-streams",
+      "title": "AMQ Streams on OpenShift"
+    },
+    {
+      "action": "Start Course",
       "count": 2,
       "external_link": "https://learn.openshift.com/middleware/courses/middleware-quarkus/",
       "course_id": "middleware-quarkus",
@@ -73,10 +80,10 @@
       "course_id": "debezium-getting-started",
       "title": "Debezium deployment"
     },
-    { 
-      "external_link": "https://learn.openshift.com/middleware/fuse-hello-world/",  
-      "course_id": "fuse-hello-world",  
-      "title": "Hello ! Fuse - Getting Started" 
+    {
+      "external_link": "https://learn.openshift.com/middleware/fuse-hello-world/",
+      "course_id": "fuse-hello-world",
+      "title": "Hello ! Fuse - Getting Started"
     }
   ]
 }
