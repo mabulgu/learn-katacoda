@@ -1,8 +1,8 @@
 {
   "title": "Getting Started With AMQ Streams",
   "description": "Get Started Directly With AMQ Streams",
-  "difficulty": "medium",
-  "time": "10 minutes",
+  "difficulty": "beginner",
+  "time": "5 minutes",
   "details": {
     "steps": [
       {
@@ -30,14 +30,14 @@
       "host01": [
         {
           "file": "*",
-          "target": "/root/amq-streams/"
+          "target": "/root"
         }
       ]
     }
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "uieditorpath": "/root/amq-streams/",
+    "uieditorpath": "/root",
     "showdashboard": true,
     "dashboards": [
       {
