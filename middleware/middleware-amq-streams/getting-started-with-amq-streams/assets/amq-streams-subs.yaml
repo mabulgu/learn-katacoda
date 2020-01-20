@@ -1,3 +1,12 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  name: amq-streams-og
+  namespace: kafka
+spec:
+  targetNamespaces:
+    - kafka
+---
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
@@ -5,10 +14,6 @@ metadata:
   generation: 1
   name: amq-streams
   namespace: kafka
-  resourceVersion: "56398"
-  selfLink: >-
-    /apis/operators.coreos.com/v1alpha1/namespaces/kafka/subscriptions/amq-streams
-  uid: 514c6b68-1f48-11ea-a90c-0242ac11000b
 spec:
   channel: stable
   installPlanApproval: Automatic
@@ -23,30 +28,24 @@ status:
         kind: CatalogSource
         name: certified-operators
         namespace: openshift-marketplace
-        resourceVersion: "26047"
-        uid: 69d66b2e-0d43-11ea-aca5-525400baad9b
       healthy: true
-      lastUpdated: "2019-12-15T14:36:45Z"
+      lastUpdated: null
     - catalogSourceRef:
         apiVersion: operators.coreos.com/v1alpha1
         kind: CatalogSource
         name: community-operators
         namespace: openshift-marketplace
-        resourceVersion: "26046"
-        uid: 68399910-0d43-11ea-aca5-525400baad9b
       healthy: true
-      lastUpdated: "2019-12-15T14:36:45Z"
+      lastUpdated: null
     - catalogSourceRef:
         apiVersion: operators.coreos.com/v1alpha1
         kind: CatalogSource
         name: redhat-operators
         namespace: openshift-marketplace
-        resourceVersion: "26073"
-        uid: 690d9ed7-0d43-11ea-aca5-525400baad9b
       healthy: true
-      lastUpdated: "2019-12-15T14:36:45Z"
+      lastUpdated: null
   conditions:
-    - lastTransitionTime: "2019-12-15T14:36:45Z"
+    - lastTransitionTime: null
       message: all available catalogsources are healthy
       reason: AllCatalogSourcesHealthy
       status: "False"
@@ -57,13 +56,11 @@ status:
     kind: InstallPlan
     name: install-rk22s
     namespace: kafka
-    resourceVersion: "56366"
-    uid: 5158db6c-1f48-11ea-a90c-0242ac11000b
   installedCSV: amqstreams.v1.3.0
   installplan:
     apiVersion: operators.coreos.com/v1alpha1
     kind: InstallPlan
     name: install-rk22s
     uuid: 5158db6c-1f48-11ea-a90c-0242ac11000b
-  lastUpdated: "2019-12-15T14:36:48Z"
+  lastUpdated: null
   state: AtLatestKnown
