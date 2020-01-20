@@ -30,14 +30,14 @@
       "host01": [
         {
           "file": "*",
-          "target": "/root"
+          "target": "/root/amq-streams/"
         }
       ]
     }
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "uieditorpath": "/root/strimzi-0.12.0/",
+    "uieditorpath": "/root/amq-streams/",
     "showdashboard": true,
     "dashboards": [
       {
