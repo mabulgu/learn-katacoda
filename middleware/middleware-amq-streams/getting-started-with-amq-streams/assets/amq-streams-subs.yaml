@@ -1,7 +1,7 @@
 apiVersion: operators.coreos.com/v1
 kind: OperatorGroup
 metadata:
-  name: amq-streams-og
+  name: amq-streams-operator-group
   namespace: kafka
 spec:
   targetNamespaces:
@@ -21,46 +21,3 @@ spec:
   source: redhat-operators
   sourceNamespace: openshift-marketplace
   startingCSV: amqstreams.v1.3.0
-status:
-  catalogHealth:
-    - catalogSourceRef:
-        apiVersion: operators.coreos.com/v1alpha1
-        kind: CatalogSource
-        name: certified-operators
-        namespace: openshift-marketplace
-      healthy: true
-      lastUpdated: null
-    - catalogSourceRef:
-        apiVersion: operators.coreos.com/v1alpha1
-        kind: CatalogSource
-        name: community-operators
-        namespace: openshift-marketplace
-      healthy: true
-      lastUpdated: null
-    - catalogSourceRef:
-        apiVersion: operators.coreos.com/v1alpha1
-        kind: CatalogSource
-        name: redhat-operators
-        namespace: openshift-marketplace
-      healthy: true
-      lastUpdated: null
-  conditions:
-    - lastTransitionTime: null
-      message: all available catalogsources are healthy
-      reason: AllCatalogSourcesHealthy
-      status: "False"
-      type: CatalogSourcesUnhealthy
-  currentCSV: amqstreams.v1.3.0
-  installPlanRef:
-    apiVersion: operators.coreos.com/v1alpha1
-    kind: InstallPlan
-    name: install-rk22s
-    namespace: kafka
-  installedCSV: amqstreams.v1.3.0
-  installplan:
-    apiVersion: operators.coreos.com/v1alpha1
-    kind: InstallPlan
-    name: install-rk22s
-    uuid: 5158db6c-1f48-11ea-a90c-0242ac11000b
-  lastUpdated: null
-  state: AtLatestKnown
