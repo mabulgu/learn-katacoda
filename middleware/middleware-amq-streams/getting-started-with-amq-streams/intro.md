@@ -31,8 +31,8 @@ Strimzi is based on Apache Kafka 2.0.1 and consists of three main components:
 * __Topic Operator__: Responsible for managing Kafka topics within a Kafka cluster running within OpenShift or Kubernetes cluster.
 * __User Operator__: Responsible for managing Kafka users within a Kafka cluster running within OpenShift or Kubernetes cluster.
 
-In this scenario, you will learn how to create a Kafka cluster using the __Strimzi Kafka Operator__.
+In this scenario, you will learn how to create related Strimzi operators and a Kafka cluster using the __Cluster Operator__.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NTU2Mjg3MCw5MDE2OTUwNDVdfQ==
+eyJoaXN0b3J5IjpbLTYyNzkyNDY1NSw5MDE2OTUwNDVdfQ==
 -->
