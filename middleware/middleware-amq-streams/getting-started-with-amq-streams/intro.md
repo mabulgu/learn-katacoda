@@ -19,7 +19,7 @@ Kafka has four core APIs:
 * The __Streams API__ allows an application to act as a stream processor, consuming an input stream from one or more topics and producing an output stream to one or more output topics, effectively transforming the input streams to output streams.
 * The __Connector API__ allows building and running reusable producers or consumers that connect Kafka topics to existing applications or data systems. For example, a connector to a relational database might capture every change to a table.
 
-![Kafka Architecture](kafka-apis.png)
+![Kafka Architecture](/openshift/assets/middleware/middleware-amq-streams/kafka_apis.png)
 
 Before you can use Kafka for your applications, you need to deploy a Kafka cluster. Kafka is run as a cluster on one or more servers that can span multiple datacenters. The Kafka cluster stores streams of _records_ in categories called __topics__. Each record consists of a key, a value, and a timestamp.
 
