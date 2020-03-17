@@ -9,21 +9,24 @@ Before applying the CockroachDB Custom Resource, observe the CockroachDB Helm Ch
 
 Update the CockroachDB Custom Resource at `go/src/github.com/redhat/cockroachdb-operator/deploy/crds/charts_v1alpha1_cockroachdb_cr.yaml` with the following values:
 
-* `spec.Replicas: 1`
-* `spec.Storage: 1Gi`
-* `spec.StorageClass: local-storage`
+* `spec.statefulset.replicas: 1`
+* `spec.storage.persistentVolume.size: 1Gi`
+* `spec.storage.persistentVolume.storageClass: 1Gi`
 
 <pre class="file"
  data-filename="/root/tutorial/go/src/github.com/redhat/cockroachdb-operator/deploy/crds/charts_v1alpha1_cockroachdb_cr.yaml"
   data-target="replace">
 apiVersion: charts.helm.k8s.io/v1alpha1
 kind: Cockroachdb
-metadata:
+metadata: 
   name: example
-spec:
-  Replicas: 1
-  Storage: "1Gi"
-  StorageClass: local-storage
+spec: 
+  statefulset: 
+    replicas: 1
+  storage: 
+    persistentVolume: 
+      size: 1Gi
+      storageClass: local-storage
 </pre>
 
 After updating the CockroachDB Custom Resource with our desired spec, apply it to the cluster:
@@ -47,7 +50,7 @@ oc get statefulset
 Confirm that the Stateful Set's pod is currently running:
 
 ```
-oc get pods -l chart
+oc get pods -l app.kubernetes.io/component=cockroachdb
 ```{{execute}}
 <br>
 Confirm that the CockroachDB "internal" and "public" ClusterIP Service were created:

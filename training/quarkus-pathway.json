@@ -1,43 +1,49 @@
 {
-  "title": "Developing with Quarkus",
-  "description": "",
-  "paid": false,
+  "title": "Quarkus and Service Mesh with Istio Workshop",
+  "icon": "fa-openshift",
   "courses": [
     {
-      "external_link": "https://learn.openshift.com/middleware/courses/middleware-quarkus/getting-started",
+      "pathway_id": "openshift/middleware/middleware-quarkus",
+      "id": "getting-started",
       "course_id": "getting-started",
-      "title": "Getting Started with Quarkus",
+      "title": "Quarkus workshop: Getting Started with Quarkus",
       "description": "Supersonic, Subatomic Java with Quarkus"
     },
     {
-      "external_link": "https://learn.openshift.com/middleware/courses/middleware-quarkus/kafka",
+     "pathway_id": "openshift/middleware/middleware-quarkus",
+      "id": "kafka",
       "course_id": "kafka",
       "title": "Reactive Streaming with Quarkus and Kafka",
       "description": "How Quarkus uses MicroProfile Reactive Messaging to interact with Apache Kafka"
     },
     {
-      "external_link": "https://learn.openshift.com/middleware/courses/middleware-quarkus/spring",
+      "pathway_id": "openshift/middleware/middleware-quarkus",
+      "id": "spring",
       "course_id": "spring",
       "title": "Quarkus for Spring Boot Developers",
       "description": "Use familiar Spring APIs and annotations to build a Quarkus app"
     },
     {
-      "external_link": "https://learn.openshift.com/middleware/courses/middleware-quarkus/monitoring",
+      "pathway_id": "openshift/middleware/middleware-quarkus",
+      "id": "monitoring",
       "course_id": "monitoring",
       "title": "Monitoring Quarkus with Prometheus and Grafana",
       "description": "Visualizing Quarkus application metrics with open source monitoring tools"
     },
     {
-      "external_link": "https://learn.openshift.com/middleware/courses/middleware-quarkus/reactive-sql",
+      "pathway_id": "openshift/middleware/middleware-quarkus",
+      "id": "reactive-sql",
       "course_id": "reactive-sql",
       "title": "Reactive programming with Quarkus Reactive SQL",
       "description": "Reactive programming with Quarkus and the Reactive SQL extension"
     },
     {
-      "external_link": "https://learn.openshift.com/middleware/courses/middleware-quarkus/panache",
+      "pathway_id": "openshift/middleware/middleware-quarkus",
+      "id": "panache",
       "course_id": "panache",
-      "title": "Effective Data with Hibernate and Panache",
+      "title": "Quarkus workshop: Effective Data with Hibernate and Panache",
       "description": "Making entities trivial and fun to write in Quarkus"
     }
+
   ]
 }
