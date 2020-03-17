@@ -1,12 +1,12 @@
-`oc new-project kafka`{{execute}}
-
-`oc create -f ~/amq-streams-subs.yaml`{{execute}}
-
 Strimzi uses the Cluster Operator to deploy and manage Kafka (including Zookeeper) and Kafka Connect clusters. The Cluster Operator is deployed inside of the Kubernetes or OpenShift cluster. To deploy a Kafka cluster, a Kafka resource with the cluster configuration has to be created within the Kubernetes or OpenShift cluster. Based on what is declared inside of the Kafka resource, the Cluster Operator deploys a corresponding Kafka cluster.
 
 ![Cluster Operator](cluster_operator.png)
 
-In this workshop environment, the Kafka operator has been pre-installed ready for use, and is monitoring the project for requests to create a Kafka cluster. The user you are running the workshop as has also been delegated the appropriate roles to allow it to act as a Kafka admin.
+//TODO
+
+`oc new-project kafka`{{execute}}
+
+`oc create -f ~/amq-streams-subs.yaml`{{execute}}
 
 To validate that your user has been granted the appropriate roles, you can use the `oc auth can-i` command to see whether you can create the custom resource definition (CRD) objects the Kafka operator responds to.
 
@@ -34,6 +34,6 @@ These resources represent Kafka specific elements:
 ![Topic Operator](topic_operator.png)
 * A __KafkaUser__ resource to create a user on a Kafka server. These actions are performed by the User Operator.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NjI3MzI2NCwtNjM5NDAwMzUxLDY5OT
-EwNTUwMl19
+eyJoaXN0b3J5IjpbOTg3Nzk2ODAyLC02Mzk0MDAzNTEsNjk5MT
+A1NTAyXX0=
 -->
