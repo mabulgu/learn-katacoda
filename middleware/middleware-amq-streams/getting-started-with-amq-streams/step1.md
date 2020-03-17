@@ -1,6 +1,6 @@
 Strimzi uses the Cluster Operator to deploy and manage Kafka (including Zookeeper) and Kafka Connect clusters. The Cluster Operator is deployed inside of the Kubernetes or OpenShift cluster. To deploy a Kafka cluster, a Kafka resource with the cluster configuration has to be created within the Kubernetes or OpenShift cluster. Based on what is declared inside of the Kafka resource, the Cluster Operator deploys a corresponding Kafka cluster.
 
-<img src="../../assets/middleware/middleware-amq-streams/cluster_operator.png" width="450"/>
+![Cluster Operator](/openshift/assets/middleware/middleware-amq-streams/cluster_operator.png)
 
 //TODO
 
