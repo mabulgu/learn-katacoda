@@ -1,6 +1,6 @@
 Strimzi uses the Cluster Operator to deploy and manage Kafka (including Zookeeper) and Kafka Connect clusters. The Cluster Operator is deployed inside of the Kubernetes or OpenShift cluster. To deploy a Kafka cluster, a Kafka resource with the cluster configuration has to be created within the Kubernetes or OpenShift cluster. Based on what is declared inside of the Kafka resource, the Cluster Operator deploys a corresponding Kafka cluster.
 
-![Cluster Operator](cluster_operator.png)
+![Cluster Operator](/openshift/assets/middleware/middleware-amq-streams/cluster_operator.png)
 
 //TODO
 
@@ -31,7 +31,6 @@ These resources represent Kafka specific elements:
 * A __KafkaConnectS2I__ resource for the Kafka Connect cluster with Source2Image support.
 * A __KafkaMirrorMaker__ resource for the Kafka Mirror Maker instance. The Cluster Operator can deploy one or more Kafka Mirror Maker replicas to replicate data between Kafka clusters. This process is called mirroring to avoid confusion with the Kafka partitions replication concept. The Mirror Maker consumes messages from the source cluster and republishes those messages to the target cluster.
 * A __KafkaTopic__ resource for creating a Topic on a Kafka server. These actions are performed by the Topic Operator.
-![Topic Operator](topic_operator.png)
 * A __KafkaUser__ resource to create a user on a Kafka server. These actions are performed by the User Operator.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbOTg3Nzk2ODAyLC02Mzk0MDAzNTEsNjk5MT
