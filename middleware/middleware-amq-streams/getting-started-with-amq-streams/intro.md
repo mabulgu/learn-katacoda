@@ -23,9 +23,9 @@ Kafka has four core APIs:
 
 Before you can use Kafka for your applications, you need to deploy a Kafka cluster. Kafka is run as a cluster on one or more servers that can span multiple datacenters. The Kafka cluster stores streams of _records_ in categories called __topics__. Each record consists of a key, a value, and a timestamp.
 
-[__AMQ Streams__](https://strimzi.io) makes it easy to run _Apache Kafka_ on __OpenShift__ or __Kubernetes__.
+[__AMQ Streams__](https://www.redhat.com/en/resources/amq-streams-datasheet) makes it easy to run _Apache Kafka_ on __OpenShift__ or __Kubernetes__.
 
-Strimzi is based on Apache Kafka 2.3.0 and consists of three main components:
+Amq Streams is based on Apache Kafka 2.3.0 and consists of three main components:
 
 * __Cluster Operator__: Responsible for deploying and managing Apache Kafka clusters within OpenShift or Kubernetes cluster.
 * __Topic Operator__: Responsible for managing Kafka topics within a Kafka cluster running within OpenShift or Kubernetes cluster.
@@ -34,6 +34,6 @@ Strimzi is based on Apache Kafka 2.3.0 and consists of three main components:
 In this scenario, you will learn how to create these operators and create a Kafka cluster using the __Cluster Operator__.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NjA2NjM1NywzMDc2NDYzMjcsOTAxNj
+eyJoaXN0b3J5IjpbMTI4MTczODcwNywzMDc2NDYzMjcsOTAxNj
 k1MDQ1XX0=
 -->
