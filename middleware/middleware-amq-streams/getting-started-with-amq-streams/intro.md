@@ -25,7 +25,7 @@ Before you can use Kafka for your applications, you need to deploy a Kafka clust
 
 [__AMQ Streams__](https://www.redhat.com/en/resources/amq-streams-datasheet) makes it easy to run _Apache Kafka_ on __OpenShift__.
 
-AMQ Streams 1.3.0 is based on Strimzi 0.14.x which is based on Apache Kafka 2.3.0 and consists of three main components:
+AMQ Streams 1.3.0 is based on [Strimzi](https://www.strimzi.io) 0.14.x which is based on Apache Kafka 2.3.0 and consists of three main components:
 
 * __Cluster Operator__: Responsible for deploying and managing Apache Kafka clusters within OpenShift cluster.
 * __Topic Operator__: Responsible for managing Kafka topics within a Kafka cluster running within OpenShift cluster.
@@ -34,6 +34,6 @@ AMQ Streams 1.3.0 is based on Strimzi 0.14.x which is based on Apache Kafka 2.3.
 In this scenario, you will learn how to create these operators and create a Kafka cluster using the __Cluster Operator__.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjczMTMwMzExLDMwNzY0NjMyNyw5MDE2OT
-UwNDVdfQ==
+eyJoaXN0b3J5IjpbLTU4MjE0NTg0NCwzMDc2NDYzMjcsOTAxNj
+k1MDQ1XX0=
 -->
