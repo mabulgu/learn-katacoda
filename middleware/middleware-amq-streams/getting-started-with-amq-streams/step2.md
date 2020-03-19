@@ -13,7 +13,7 @@ metadata:
   name: my-cluster
 spec:
   kafka:
-    version: 2.1.0
+    version: 2.3.0
     replicas: 1
     listeners:
       plain: {}
@@ -61,5 +61,6 @@ Or look at the more human friendly representation of this same information:
 Let's now explore our Kafka cluster.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODg5ODc0MjFdfQ==
+eyJoaXN0b3J5IjpbLTExMDQzOTk1MTUsLTEwODg5ODc0MjFdfQ
+==
 -->
