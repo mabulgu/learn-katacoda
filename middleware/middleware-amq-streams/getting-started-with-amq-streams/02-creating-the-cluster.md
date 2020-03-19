@@ -11,7 +11,6 @@ apiVersion: kafka.strimzi.io/v1beta1
 kind: Kafka
 metadata:
   name: my-cluster
-  namespace: camel-example-strimzi
 spec:
   kafka:
     version: 2.3.0
@@ -30,6 +29,9 @@ spec:
     replicas: 1
     storage:
       type: ephemeral
+  entityOperator:
+    topicOperator: {}
+    userOperator: {}
 ```
 
 This specifies what the Kafka cluster should look like, with the name to be given to the cluster in the `metadata.name` field. In this example, the Kafka cluster will be called `my-cluster`.
