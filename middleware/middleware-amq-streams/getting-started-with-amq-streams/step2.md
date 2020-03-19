@@ -7,38 +7,36 @@ A persistent Kafka cluster uses `PersistentVolumes` to store Zookeeper and Kafka
 An example of a `Kafka` CRD object definition you might use for an ephemeral cluster in development and/or testing, is:
 
 ```
-apiVersion: kafka.strimzi.io/v1alpha1
+apiVersion: kafka.strimzi.io/v1beta1
 kind: Kafka
 metadata:
   name: my-cluster
+  namespace: camel-example-strimzi
 spec:
   kafka:
     version: 2.3.0
-    replicas: 1
+    replicas: 3
     listeners:
       plain: {}
       tls: {}
     config:
-      offsets.topic.replication.factor: 1
-      transaction.state.log.replication.factor: 1
-      transaction.state.log.min.isr: 1
-      log.message.format.version: "2.1"
+      offsets.topic.replication.factor: 3
+      transaction.state.log.replication.factor: 3
+      transaction.state.log.min.isr: 2
+      log.message.format.version: '2.3'
     storage:
       type: ephemeral
   zookeeper:
-    replicas: 1
+    replicas: 3
     storage:
       type: ephemeral
-  entityOperator:
-    topicOperator: {}
-    userOperator: {}
 ```
 
 This specifies what the Kafka cluster should look like, with the name to be given to the cluster in the `metadata.name` field. In this example, the Kafka cluster will be called `my-cluster`.
 
 To understand what fields in a CRD are for, you will need to consult any online documentation for the CRD provided by the Kafka operator. It is not currently possible to use the `oc explain` command on CRD objects to see builtin documentation like you can with builtin resource objects types.
 
-When the CRD object is created from this definition, the Kafka operator will create the deployments for Kafka and Zookeeper, doing all the hard work for you, by virtue of the operator containing the operational knowledge needed to deploy and manage the Kafka cluster.
+When the CRD object is created from this definition, the Kafka operator will create the deployments for Kafka and Zookeeper, doing all the hard work for you, by virtue of the operator containing the operational knowledge needed to deploy and manage the Kafkaor Kubernetes cluster.
 
 To create an ephermal Kafka cluster using this definition, run:
 
@@ -61,6 +59,6 @@ Or look at the more human friendly representation of this same information:
 Let's now explore our Kafka cluster.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDQzOTk1MTUsLTEwODg5ODc0MjFdfQ
-==
+eyJoaXN0b3J5IjpbLTM1NTE5OTA2NSwtMTEwNDM5OTUxNSwtMT
+A4ODk4NzQyMV19
 -->
