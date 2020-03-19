@@ -2,8 +2,6 @@ AMQ Streams uses the Cluster Operator to deploy and manage Kafka (including Zook
 
 ![Cluster Operator](/openshift/assets/middleware/middleware-amq-streams/cluster_operator.png)
 
-//TODO
-
 `oc new-project kafka`{{execute}}
 
 `oc create -f ~/amq-streams-subs.yaml`{{execute}}
@@ -33,6 +31,6 @@ These resources represent Kafka specific elements:
 * A __KafkaTopic__ resource for creating a Topic on a Kafka server. These actions are performed by the Topic Operator.
 * A __KafkaUser__ resource to create a user on a Kafka server. These actions are performed by the User Operator.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzkyNzcxMDksOTg3Nzk2ODAyLC02Mz
-k0MDAzNTEsNjk5MTA1NTAyXX0=
+eyJoaXN0b3J5IjpbLTYxODg1NTAzLC0xNTM5Mjc3MTA5LDk4Nz
+c5NjgwMiwtNjM5NDAwMzUxLDY5OTEwNTUwMl19
 -->
