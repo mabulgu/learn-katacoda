@@ -15,7 +15,7 @@ metadata:
 spec:
   kafka:
     version: 2.3.0
-    replicas: 3
+    replicas: 1
     listeners:
       plain: {}
       tls: {}
@@ -27,7 +27,7 @@ spec:
     storage:
       type: ephemeral
   zookeeper:
-    replicas: 3
+    replicas: 1
     storage:
       type: ephemeral
 ```
@@ -59,6 +59,6 @@ Or look at the more human friendly representation of this same information:
 Let's now explore our Kafka cluster.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4MzAxNzU5MCwtMzU1MTk5MDY1LC0xMT
-A0Mzk5NTE1LC0xMDg4OTg3NDIxXX0=
+eyJoaXN0b3J5IjpbNzkzMTQ5MTc4LDEzODMwMTc1OTAsLTM1NT
+E5OTA2NSwtMTEwNDM5OTUxNSwtMTA4ODk4NzQyMV19
 -->
