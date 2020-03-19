@@ -40,7 +40,7 @@ When the CRD object is created from this definition, the Kafka operator will cre
 
 To create an ephermal Kafka cluster using this definition, run:
 
-`oc apply -f kafka.yaml`{{execute}}
+`oc apply -f ~/simplest-cluster.yaml`{{execute}}
 
 The output you should see displayed when the Kafka cluster with name `my-cluster` is created, is:
 
@@ -59,6 +59,6 @@ Or look at the more human friendly representation of this same information:
 Let's now explore our Kafka cluster.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NTE5OTA2NSwtMTEwNDM5OTUxNSwtMT
-A4ODk4NzQyMV19
+eyJoaXN0b3J5IjpbMTM4MzAxNzU5MCwtMzU1MTk5MDY1LC0xMT
+A0Mzk5NTE1LC0xMDg4OTg3NDIxXX0=
 -->
