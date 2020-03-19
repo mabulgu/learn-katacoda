@@ -25,7 +25,7 @@ Before you can use Kafka for your applications, you need to deploy a Kafka clust
 
 [__Strimzi__](https://strimzi.io) makes it easy to run _Apache Kafka_ on __OpenShift__ or __Kubernetes__.
 
-//TODO: Strimzi is based on Apache Kafka 2.0.1 and consists of three main components:
+Strimzi is based on Apache Kafka 2.4.0 and consists of three main components:
 
 * __Cluster Operator__: Responsible for deploying and managing Apache Kafka clusters within OpenShift or Kubernetes cluster.
 * __Topic Operator__: Responsible for managing Kafka topics within a Kafka cluster running within OpenShift or Kubernetes cluster.
@@ -34,5 +34,6 @@ Before you can use Kafka for your applications, you need to deploy a Kafka clust
 In this scenario, you will learn how to create these operators and create a Kafka cluster using the __Cluster Operator__.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA3NjQ2MzI3LDkwMTY5NTA0NV19
+eyJoaXN0b3J5IjpbMTYyMjY0NjA0OCwzMDc2NDYzMjcsOTAxNj
+k1MDQ1XX0=
 -->
