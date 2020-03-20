@@ -4,15 +4,11 @@ The Kafka operator will add labels to the resources created so those for a speci
 
 To query the resources related to `my-cluster` using a label selector, use:
 
-```execute
-oc get all,configmap,secret,serviceaccount,rolebinding -o name --selector strimzi.io/cluster=my-cluster
-```
+`oc get all,configmap,secret,serviceaccount,rolebinding -o name --selector strimzi.io/cluster=my-cluster`{{execute}}
 
 Before the cluster can be used, we need to wait until it is fully deployed and running. To monitor the status of the Kafka related deployments, run:
 
-```execute
-watch oc get deployment,statefulset --selector strimzi.io/cluster=my-cluster
-```
+`watch oc get deployment,statefulset --selector strimzi.io/cluster=my-cluster`{{execute}}
 
 You should see something similar to:
 
@@ -29,12 +25,13 @@ __NOTE:__ Deploying a Kafka cluster can take some time, if you don't see the pre
 
 Once you have the desired state, you can just exit the _watch_ command.
 
-```execute
-<ctrl+c>
-```
+`<ctrl+c>` {{execute}}
 
 First thing we should notice is that the Cluster Operator (_strimzi-cluster-operator_) will deploy a Kafka Server(_my-cluster-kafka_) as a StatefulSet with one instance, a Zookeper Cluster (_my-cluster-zookeeper_) as a StatefulSet with one instance and an Entity Operator (_my-cluster-entity-operator_) for this cluster. This entity operator provides a specific Topic Operator and User Operator for this specific Kafka cluster.
 
 __NOTE__: We're using a single instance cluster for this lab to keep resource usage low, but in a real cluster you should have at least 3 replicas of each Kafka and Zookeper.
 
 Now that we know what has been deployed and that we have verified that our Kafka cluster is up and running, let's move ahead to use it.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3MDU4MzU5MTZdfQ==
+-->
