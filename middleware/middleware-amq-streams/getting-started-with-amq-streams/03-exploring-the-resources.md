@@ -32,6 +32,3 @@ First thing we should notice is that the Cluster Operator (_strimzi-cluster-oper
 __NOTE__: We're using a single instance cluster for this lab to keep resource usage low, but in a real cluster you should have at least 3 replicas of each Kafka and Zookeper.
 
 Now that we know what has been deployed and that we have verified that our Kafka cluster is up and running, let's move ahead to use it.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDU4MzU5MTZdfQ==
--->

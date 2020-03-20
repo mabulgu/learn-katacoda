@@ -32,8 +32,3 @@ AMQ Streams 1.3.0 is based on [Strimzi](https://www.strimzi.io) 0.14.x which is 
 * __User Operator__: Responsible for managing Kafka users within a Kafka cluster running within OpenShift cluster.
 
 In this scenario, you will learn how to create these operators and create a Kafka cluster using the __Cluster Operator__.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MjE0NTg0NCwzMDc2NDYzMjcsOTAxNj
-k1MDQ1XX0=
--->
