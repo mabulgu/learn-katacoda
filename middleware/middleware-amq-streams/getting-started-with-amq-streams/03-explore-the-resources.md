@@ -25,7 +25,7 @@ __NOTE:__ Deploying a Kafka cluster can take some time, if you don't see the pre
 
 Once you have the desired state, you can just exit the _watch_ command.
 
-`<ctrl+c>` {{execute}}
+`<ctrl+c>`{{execute}}
 
 First thing we should notice is that the Cluster Operator (_strimzi-cluster-operator_) will deploy a Kafka Broker Cluster (_my-cluster-kafka_) as a StatefulSet with one instance, a Zookeper Cluster (_my-cluster-zookeeper_) as a StatefulSet with one instance and an Entity Operator (_my-cluster-entity-operator_) for this cluster. This entity operator provides a specific Topic Operator and User Operator for this specific Kafka cluster.
 
@@ -33,5 +33,5 @@ __NOTE__: We're using a single instance cluster for this lab to keep resource us
 
 Now that we know what has been deployed and that we have verified that our Kafka cluster is up and running, let's move ahead to use it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NjI4OTUzMF19
+eyJoaXN0b3J5IjpbLTQ2Mzc1MjYwLDIwNTYyODk1MzBdfQ==
 -->
