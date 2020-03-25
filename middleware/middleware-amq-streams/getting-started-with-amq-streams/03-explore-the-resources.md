@@ -8,7 +8,7 @@ To query the resources related to `my-cluster` using a label selector, use:
 
 Before the cluster can be used, we need to wait until it is fully deployed and running. To monitor the status of the Kafka related deployments, run:
 
-`watch oc get deployment,statefulset --selector strimzi.io/cluster=my-cluster`{{execute}}
+`watch oc get pod,deployment,statefulset --selector strimzi.io/cluster=my-cluster`{{execute}}
 
 You should see something similar to:
 
@@ -33,5 +33,6 @@ __NOTE__: We're using a single instance cluster for this lab to keep resource us
 
 Now that we know what has been deployed and that we have verified that our Kafka cluster is up and running, let's move ahead to use it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2Mzc1MjYwLDIwNTYyODk1MzBdfQ==
+eyJoaXN0b3J5IjpbLTEzNzg0OTkwMTEsLTQ2Mzc1MjYwLDIwNT
+YyODk1MzBdfQ==
 -->
